@@ -36,20 +36,20 @@ body{
    display: grid;
    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
    grid-template-rows: 50%, 50%;
-   gap: 3vh;
-   width: 70%;
-   height: 60vh;
+   gap: 1.6vw;
+   width: 70vw;
+   height: 30vw;
 }
 
 .img img{
-   width: 10vh;
+   width: 5vw;
    border: 0.4vh white solid;
    border-radius: 50%;
-   margin-bottom: 3.8vh;
+   margin-bottom: 1.8vw;
 }
 
 .son{
-   border-radius: 2vh;
+   border-radius: 1vw;
    position: relative;
    display: flex;
    justify-content: end;
@@ -61,14 +61,19 @@ body{
    bottom: 0;
    width: 100%;
    height: 80%;
-   border-radius: 1.7vh;
+   border-radius: 1vw;
    background-color: var(--Dark-blue);
-   padding: 3vh;
+   padding: 1.6vw;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    cursor: pointer;
    transition: background-color 0.6s;
+}
+
+.cape .hrs{
+   display: flex;
+   flex-direction: column;
 }
 
 .cape:hover{
@@ -86,7 +91,7 @@ body{
 
 .cape .tipe span{
    color: white;
-   font-size: 3vh;
+   font-size: 1.6vw;
 }
 
 .cape .tipe svg{
@@ -98,11 +103,11 @@ body{
 
 .cape h1{
    color: white;
-   font-size: 6vh;
+   font-size: 3vw;
 }
 
 .cape span{
-   font-size: 2vh;
+   font-size: 1vw;
    color: var(--Pale-Blue);
 }
 
@@ -114,23 +119,23 @@ body{
    height: 70%;
    background-color: var(--Blue);
    border-radius: 2vh;
-   padding: 3vh;
+   padding: 1.6vw;
    color: white;
    position: absolute;
 }
 
-.one .cape span{
+.one .capeo span{
    color: var(--Pale-Blue);
-   font-size: 1.8vh;
+   font-size: 1.1vw;
 }
 
 .one .capeo h1{
-   font-size: 6vh;
+   font-size: 3vw;
 }
 
 .son svg{
    position: absolute;
-   margin-right: 2vh;
+   margin-right: 1vw;
 }
 
 .one{
@@ -150,7 +155,7 @@ body{
 }
 
 .one span{
-   font-size: 2vh;
+   font-size: 1vw;
 }
 
 .text span{
@@ -209,7 +214,7 @@ body{
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
    /* body{
       padding: 20px;
    } */
@@ -219,15 +224,22 @@ body{
       height: 90vh;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+      gap: 2.6vh;
    }
 
    .son{
       width: 100%;
-      height: 30vh;
+      height: 70vh;
+      border-radius: 2vh;
+   }
+
+   .cape{
+      padding: 2.6vh;
    }
 
    .cape .hrs{
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
    }
@@ -244,8 +256,13 @@ body{
       display: flex;
       flex-direction: row;
       align-items: center;
+      padding: 2.6vh;
       /* justify-content: center; */
       /* position: absolute; */
+   }
+
+   .one .capeo span{
+      font-size: 2vh;
    }
 
    .one .capeo h1{
@@ -261,15 +278,20 @@ body{
    }
 
    .son{
-      height: 140px;
+      height: 20vh;
    }
 
    .one{
-      height: 180px;
+      height: 30vh;
+   }
+
+   .one span{
+      font-size: 2vh;
    }
 
    .son .cape{
       justify-content: center;
+      border-radius: 2vh;
    }
 
    .cape .tipe span{
